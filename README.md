@@ -74,7 +74,7 @@ El histograma y la función de probabilidad están interconectados, por eso se d
 ![Histograma](https://drive.google.com/uc?export=view&id=1gH-x2WzdD5oh5uOKuq1KVC9wJTtaKf6D) ![Funcion de probabilidad](https://drive.google.com/uc?export=view&id=1m2sgsltka0-iiEm1dLqA9y7J9f3RD_0r)
 
 ## Relación señal ruido (SNR)
-La Relación señal ruido es la relación entre la potencia de una señal útil y la potencia del ruido de fondo. Se utiliza para medir la calidad de la señal; un SNR más alto indica una señal más clara y menos afectada por el ruido; se utiliza la siguiente fórmula:
+La Relación señal ruido es la relación entre la potencia de una señal útil y la potencia del ruido de fondo. Se utiliza para medir la calidad de la señal; un SNR más alto indica una señal más clara y menos afectada por el ruido; es decir si se obtiene un SNR positivo significa que hay mas datos de la señal que el ruido, caso contrario del negativo que significaria que la mayoria de datos son ruido, es por esto que siempre se buscara el valor mas alto y positivo de SNR se utiliza la siguiente fórmula:
 <br>
 <br>
 ![SNR](https://quicklatex.com/cache3/2f/ql_51d12e518023d4d41be035e9f8e68f2f_l3.png)
@@ -126,7 +126,7 @@ plt.hist(valores, bins="numero deseado de bins sin comillas")
 #funcion de probabilidad por codigo(linea 138)
 count, bins = np.histogram(valores, bins="numero deseado de bins sin comillas", density=True)
 ```
-6. Para la parte de los ruidos, el valor de SNR depende de la variación estándar que se le quiera permitir a la señal del ruido, ya que esta se normaliza o estandariza de forma automática
+6. Para la parte de los ruidos, el valor de SNR depende de la variación estándar que se le quiera permitir a la señal del ruido (en cada uno se pueden obtener valores positivos o negativos, depende del usuario), ya que esta se normaliza o estandariza de forma automática
 <br>
    a. Para el ruido gaussiano (linea 162)
    
